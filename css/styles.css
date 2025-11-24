@@ -213,7 +213,6 @@ button {
     display: flex;
     flex-direction: column;
     height: 100%;
-    
 }
 .mobile-menu-close {
     position: absolute;
@@ -241,7 +240,6 @@ button {
     color: #2e2f42;
     margin-left: 16px;
     margin-bottom: 40px;
-
 }
 .nav-mobile-menu-link.current {
     color: #404bbf;
@@ -263,6 +261,7 @@ button {
 .mobile-menu-contacts-link.current {
     color: #4d5ae5;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
