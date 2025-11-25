@@ -75,6 +75,8 @@ button {
 .page-header .container {
     display: flex;
     justify-content: space-between;
+}
+.header-container {
     align-items: center;
 }
 .nav-header-list,
@@ -218,6 +220,10 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
+    border-radius: 100%;
+    border: 1px solid #e7e9fc;
+    stroke-width: 1px;
+    stroke: #2e2f42;
 }
 .mobile-menu-nav {
     margin-bottom: auto;
@@ -272,7 +278,6 @@ button {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-
 }
 .social-icons-item {
     width: 100%;
@@ -296,3 +301,138 @@ button {
     }
 }
 /* #endregion mobile menu */
+
+/* #endregion header */
+
+/* #region baner */
+   /* #region mobile-baner */
+.main-baner {
+    background-color: #2e2f42;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 72px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/Dark-bg-Mb1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 320px;
+    margin: 0 auto;
+}
+@media (resolution: 2x) {
+    .main-baner {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/Dark-bg-Mb@2x.jpg);
+    }  
+}
+.main-title {
+    margin: 0 auto 36px auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 216px;
+    display: block;
+}
+.main-button {
+    background-color: #4d5ae5;
+    cursor: pointer;
+    height: 56px;
+    min-width: 169px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-button:hover,
+.main-button:focus {
+    background-color: #404BBF;
+}
+.button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    white-space: nowrap;
+}
+   /* #endregion mobile-baner */
+
+@media screen and (min-width: 768px) {
+    .main-baner {
+            background-color: #2e2f42;
+            height: 436px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 36px;
+            padding-top: 112px;
+            padding-bottom: 112px;
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Dark-bg-Tablet1x.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+    @media (resolution: 2x) {
+        .main-baner {
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Dark-bg-Tablet@2x.jpg);
+        }
+    }
+    .main-title {
+        margin: 0 auto 36px auto;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        max-width: 496px;
+        display: block;
+    }
+
+    .main-button {
+        background-color: #4d5ae5;
+        cursor: pointer;
+        height: 56px;
+        min-width: 169px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+        border: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .main-button:hover,
+    .main-button:focus {
+        background-color: #404BBF;
+    }
+
+    .button-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color: #fff;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+
+}
