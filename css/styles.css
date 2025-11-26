@@ -691,13 +691,34 @@ button {
 
     /* #region tablet-Team */
 @media screen and (min-width: 768px) {
-
+    .team-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 64px;
+        column-gap: 24px;
+        align-self: center;
+        justify-content: center;
+    }
 }
     /* #endregion tablet-Team */
 
     /* #region main-Team */
 @media screen and (min-width: 1158px) {
-    
+    .team {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    .team-list {
+        flex-direction: row;
+        gap: 24px;
+        margin-left: auto;
+    }
+    .team-item:last-child {
+        margin-right: 0;
+    }
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
 }
     /* #endregion main-Team */
 
